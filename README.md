@@ -144,7 +144,7 @@ vim /home/<your42login>/monitoring.sh
   
   echo -n "LVM usage: "
   
-  if vgdisplay | grep lvm ? /dev/null ; then
+  if file -s "/dev/dm-0" | grep LVM > /dev/null ; then
   
     echo "yes"
   
