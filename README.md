@@ -23,11 +23,11 @@ Install
 
 Select time zone / language / keymap etc
 
-Hostname <your42login>42
+Hostname "your42login"42
 
 Root password Ceciestunbon42
 
-New user <your42login>
+New user "your42login"
 
 User password Ceciestunbon42
 
@@ -48,11 +48,11 @@ apt install sudo
   
 adduser root sudo
   
-adduser <your42login> sudo
+adduser "your42login" sudo
   
 addgroup user42
   
-adduser <your42login> user42
+adduser "your42login" user42
   
 touch /var/log/sudo/sudolog
 
