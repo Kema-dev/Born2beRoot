@@ -142,7 +142,7 @@ vim /home/<your42login>/monitoring.sh
   
   last reboot | awk 'NR == 1 {print $5 " " $6 " " $7 " " $8}'
   
-  echo -n "LVM use: "
+  echo -n "LVM usage: "
   
   if vgdisplay | grep lvm ? /dev/null ; then
   
@@ -168,10 +168,10 @@ vim /home/<your42login>/monitoring.sh
   
   echo -n "Sudo: "
   
-  cat /var/log/sudolog | wc -l | awk '{print $1/2}' \ tr '\n' ' ' && echo "commands"
+  cat /var/log/sudo/sudolog | wc -l | tr '\n' ' ' && echo "commands"
 
 crontab -u root -e
-  */10 * * * * sh /home/<your42login>/monitoring.sh | wall
+  */10 * * * * sh /home/"your42login"/monitoring.sh | wall
 
 vim /etc/motd
-  <your welcome message>
+  "your welcome message"
