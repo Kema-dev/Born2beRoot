@@ -96,7 +96,7 @@ vim /etc/pam.d/common-password
   
   goto line 25 and add at the end of the line
   
-  minlen=3 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+  minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
 
 vim /etc/ssh/sshd_config
   
