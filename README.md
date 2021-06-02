@@ -144,7 +144,7 @@ vim /home/<your42login>/monitoring.sh
   
   echo -n "LVM usage: "
   
-  if file -s "/dev/dm-0" | grep LVM > /dev/null ; then
+  if lsblk | grep lvm > /dev/null ; then
   
     echo "yes"
   
@@ -160,7 +160,7 @@ vim /home/<your42login>/monitoring.sh
   
   echo -n "User log: "
   
-  echo w | wc -l
+  w | wc -l | awk '{print $1 - 2}'
   
   echo -n "Network: "
   
