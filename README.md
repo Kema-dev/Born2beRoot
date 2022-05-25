@@ -1,9 +1,12 @@
 # Born2beRoot
 My 42 Lyon's Born2beRoot
 
-Download Debian 10 @ https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.9.0-amd64-netinst.iso
+Born2beRoot is a project aiming to create a virtual machine using Virtual Box.
+Full subject can be found [here](docs/)
 
-Open VirtualBox
+1. Download Debian 10 [here](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.9.0-amd64-netinst.iso)
+
+1. Open VirtualBox
 
 New
 
