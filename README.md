@@ -1,9 +1,8 @@
 # Born2beRoot
 
-## My 42 Lyon's Born2beRoot
+Born2beRoot is a 42 project aiming to create a virtual machine using Virtual Box.
 
-Born2beRoot is a project aiming to create a virtual machine using Virtual Box.
-Full subject can be found [here](docs/)
+Full subject is available [here](docs/)
 
 Below is the list of required steps to set up the VM
 
