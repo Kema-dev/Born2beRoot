@@ -44,7 +44,7 @@ Below is the list of commands used to configure the VM
 - `vim /etc/sudoers.d/sudoconf`
 - Type this in
 
-  ```shell
+  ```bash
     Defaults passwd_tries=3
     Defaults badpass_message="!NO! Try <password hint>"
     Defaults logfile="/var/log/sudo/sudolog"
@@ -58,7 +58,7 @@ Below is the list of commands used to configure the VM
 - `vim /etc/login.defs`
 - Type this in
 
-  ```shell
+  ```bash
   :se nu
   go to line 160
   PASS_MAX_DAYS 30
@@ -70,7 +70,7 @@ Below is the list of commands used to configure the VM
 - `vim /etc/pam.d/common-password`
 - Type this in
   
-  ```shell
+  ```bash
   :se nu
   goto line 25 and add at the end of the line
   minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
@@ -79,7 +79,7 @@ Below is the list of commands used to configure the VM
 - `vim /etc/ssh/sshd_config`
 - Type this in
 
-  ```shell
+  ```bash
   :se nu
   go to line 13 and uncomment it
   Port 4242
@@ -90,7 +90,7 @@ Below is the list of commands used to configure the VM
 - `vim /home/<your_42_login>/monitoring.sh`
 - Type this in
 
-  ```shell
+  ```bash
   #!/bin/bash
   echo -n "Architecture: "
   uname -a | grep Linux
@@ -125,14 +125,14 @@ Below is the list of commands used to configure the VM
 - `crontab -u root -e`
 - Type this in
 
-  ```shell
+  ```bash
   */10 * * * * sh /home/<your_42_login>/monitoring.sh | wall
   ```
 
 - `vim /etc/motd`
 - Type this in
   
-  ```shell
+  ```bash
   <your_welcome_message>
   ```
 
